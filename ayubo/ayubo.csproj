@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BEECA09E-F6BF-4BF4-B7D0-770286B280EF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ayubo</RootNamespace>
+    <AssemblyName>ayubo</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ayuboDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ayuboDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="driver.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="driver.Designer.cs">
+      <DependentUpon>driver.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hirpay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hirpay.Designer.cs">
+      <DependentUpon>hirpay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hom.Designer.cs">
+      <DependentUpon>hom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lhire.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lhire.Designer.cs">
+      <DependentUpon>lhire.cs</DependentUpon>
+    </Compile>
+    <Compile Include="log_in.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="log_in.Designer.cs">
+      <DependentUpon>log_in.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mhire.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mhire.Designer.cs">
+      <DependentUpon>mhire.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pack.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pack.Designer.cs">
+      <DependentUpon>pack.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rencusdetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rencusdetails.Designer.cs">
+      <DependentUpon>rencusdetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="rencusid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rencusid.Designer.cs">
+      <DependentUpon>rencusid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rendetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rendetail.Designer.cs">
+      <DependentUpon>rendetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Renpay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Renpay.Designer.cs">
+      <DependentUpon>Renpay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vehdetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vehdetail.Designer.cs">
+      <DependentUpon>vehdetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vehtyp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vehtyp.Designer.cs">
+      <DependentUpon>vehtyp.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="driver.resx">
+      <DependentUpon>driver.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hirpay.resx">
+      <DependentUpon>hirpay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hom.resx">
+      <DependentUpon>hom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lhire.resx">
+      <DependentUpon>lhire.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mhire.resx">
+      <DependentUpon>mhire.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pack.resx">
+      <DependentUpon>pack.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rencusdetails.resx">
+      <DependentUpon>rencusdetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="rencusid.resx">
+      <DependentUpon>rencusid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rendetail.resx">
+      <DependentUpon>rendetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Renpay.resx">
+      <DependentUpon>Renpay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vehdetail.resx">
+      <DependentUpon>vehdetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vehtyp.resx">
+      <DependentUpon>vehtyp.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="ayuboDataSet.xsc">
+      <DependentUpon>ayuboDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ayuboDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ayuboDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ayuboDataSet.xss">
+      <DependentUpon>ayuboDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
